@@ -1,8 +1,8 @@
 
 let accessToken = false;
 // REMOVE
-const clientID = '';
-const redirectURI = 'http://localhost:3000/';
+const clientID = '32e0bac9e25442009f40ef57a66aa984';
+const redirectUri = 'http://localhost:3000/';
 
 const Spotify = {
 
@@ -24,7 +24,8 @@ const Spotify = {
             return accessToken
         }
         else {
-            window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`
+            const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
+            window.location = accessUrl;
         }
     },
 
