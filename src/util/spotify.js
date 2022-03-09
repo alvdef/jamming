@@ -2,7 +2,7 @@
 let accessToken = false;
 // REMOVE
 const clientID = '32e0bac9e25442009f40ef57a66aa984';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'https://jamming-alvdef.netlify.app/';
 
 const Spotify = {
 
